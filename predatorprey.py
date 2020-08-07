@@ -31,12 +31,12 @@ def eaten( prd_pop, pry_pop, prd_vor, prd_cap ):               # <=========== th
 
 
 
-def pred_births( pop, cap, frt, pry_pop ):    
+def pred_births( pop, cap, frt, pry_pop ):                       # <=========== this needs fixed.
     return( np.floor( ( pop * frt ) * ( 1 - ( pop / cap ) ) ) )
 
 
 
-eat_mod = eaten( pred_pop, prey_pop, pred_vor, pred_cap )
+eat_mod = eaten( pred_pop, prey_pop, pred_vor, pred_cap )            # <=========== this needs fixed.
 
 def pred_deaths( pop, mrt, eat_mod ):    
     return( np.ceil( ( pop * mrt ) ) )
