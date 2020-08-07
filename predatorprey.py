@@ -24,8 +24,8 @@ def prey_births( pop, cap, frt ):
 def prey_deaths( pop, mrt ):    
     return( np.ceil( ( pop * mrt ) ) )
 
-def eaten( prd_pop, pry_pop, prd_vor, prd_cap ):
-    return( prd_pop - pry_pop * ( 1 - ( pop / prd_cap ) )
+def eaten( prd_pop, pry_pop, prd_vor, prd_cap ):               # <=========== this needs fixed.
+    return( prd_pop - pry_pop * ( 1 - ( pop / prd_cap ) ) )
 
 
 
